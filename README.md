@@ -1,0 +1,3 @@
+# F# Mutable Variable Integer Overflow Bug
+
+This repository demonstrates a potential integer overflow bug in F# that arises from the use of mutable variables within a recursive loop.  The `bug.fs` file contains the buggy code, while `bugSolution.fs` provides a corrected version using techniques to mitigate the risk of overflow.  The bug arises because the `x` and `y` variables are allowed to increment beyond the maximum value of a 32-bit integer. This leads to unexpected results or program crashes.
